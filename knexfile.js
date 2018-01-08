@@ -1,5 +1,5 @@
 // Update with your config settings.
-
+require('dotenv').config
 module.exports = {
 
   development: {
@@ -27,7 +27,7 @@ module.exports = {
   },
 
   production: {
-    client: 'postgresql',
+    client: 'pg',
     connection: {
       database: 'my_db',
       user:     'username',
