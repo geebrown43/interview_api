@@ -16,6 +16,11 @@ router.put('/behavior/:id', (req, res) => {
     .then(() => res.json())
 })
 
+router.get('/behavior/:id', (req, res) => {
+    let id = req.params.id
+    db.getBehaviorQID(id)
+    .then(data => res.json(data))
+})
 
 
 
